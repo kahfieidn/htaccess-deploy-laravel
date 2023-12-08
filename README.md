@@ -1,2 +1,8 @@
-# htaccess-deploy-laravel
-Auto redirect ke directory public laravel deploy
+# .htaccess
+
+```
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+```
